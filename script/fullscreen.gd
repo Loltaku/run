@@ -5,7 +5,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_fullscreen"):
 		# 错误检查
 		if not InputMap.has_action("toggle_fullscreen"):
-			push_error("Action 'toggle_fullscreen' not defined in Input Map!")
+			print("Action 'toggle_fullscreen' not defined in Input Map!")
 			return
 			
 		var window := get_viewport().get_window()
