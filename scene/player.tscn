@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7x5sowinyf72"]
+
+[ext_resource type="Texture2D" uid="uid://cdupklv44qakf" path="res://assess/player.png" id="1_xo3ru"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4qnqm"]
+radius = 4.0
+
+[node name="player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xo3ru")
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4qnqm")
+debug_color = Color(0.913725, 0.6, 0.701961, 0.419608)

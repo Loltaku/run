@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctpbxiqpssdwu"]
+
+[ext_resource type="Script" uid="uid://cw1rkxh2jadbk" path="res://script/fullscreen.gd" id="1_dbls1"]
+[ext_resource type="PackedScene" uid="uid://c7x5sowinyf72" path="res://scene/player.tscn" id="2_dbls1"]
+
+[node name="Game" type="Node"]
+
+[node name="Fullscreen" type="Node" parent="."]
+script = ExtResource("1_dbls1")
+
+[node name="player" parent="." instance=ExtResource("2_dbls1")]
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position_smoothing_enabled = true
