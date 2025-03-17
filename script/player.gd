@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 150.0
+const ACCELERATION = 800.0  # 新增加速度
+const FRICTION = 1000.0     # 新增摩擦力
+const JUMP_VELOCITY = -239.0
 
 
 func _physics_process(delta: float) -> void:
